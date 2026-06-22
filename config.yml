@@ -14,6 +14,9 @@ users:
       school: 南通大学               # ← 保持这个，不要改
       lon: '120.907706'             # ← 啬园校区经度，不用改
       lat: '31.974300'              # ← 啬园校区纬度，不用改
+            lon: '120.907706'
+      lat: '31.974300'
+      deviceId: 'b8cf562c-66c4-44bc-80b2-c528e0d3d796'
       abnormalReason: 在校
       photo: default.png
 
