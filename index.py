@@ -2,7 +2,6 @@
 import sys
 import json
 import uuid
-import oss2
 import yaml
 import base64
 import requests
@@ -300,7 +299,7 @@ def submitForm(session, user, form, apis):
         "userId": user['username'],
         "systemName": "android",
         "lat": Decimal(user['lat']),
-        "deviceId": str(uuid.uuid1())
+       "deviceId": user.get('deviceId', str(uuid.uuid1()))
     }
 
     headers = {
